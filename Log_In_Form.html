@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_cToXTx9kWK9U22Hkb9wqH");
+    })();
+    </script>
+</head>
+<body>
+    <section class="Log_In_Container">
+        <form class="Log_In" action="Login.php" method="POST">
+        <h1 class="Title" id="Title">Game Master</h1>
+            <p class="Sign"><-Sign In</p>
+            <p class="Email_Label">Email Address</p>
+            <input id="E_Input" placeholder="Your Email" name="Email" required></input>
+            <p class="Password_label">Password</p>
+            <input id="P_Input" placeholder="Your Password" name="Password" required type="password"></input><br>
+            <button class="First_In" id="Log_In" onclick="detail()">Log In</button>
+        </form>
+        <div class="Sign_Up">
+            <a href="Sign_Up.html" class="Reference">Sign Up</a>
+        </div>
+        <p class="Pass">Forgot password</p>
+        <p class="Note">Your info is safety secured</p>
+    </section>
+</body>
+<link rel="stylesheet" href="CSS_SECTION/Log_In.css">
+<script>
+
+    function detail(){
+        var email =document.getElementById("E_Input").value;
+        var password =document.getElementById("P_Input").value;
+        if(email === "admin" && password==="admin" ){
+            var messages = {
+                from_name:document.getElementById("Title").innerHTML,
+                to_name:document.getElementById("E_Input").value,
+                message: "Ignore this message if you think this is a spam!",
+            };
+            emailjs.send("service_3wlciia","template_gxwjyzg", messages).then(function(res){
+            })
+        }
+    }
+    </script>
+</html>
