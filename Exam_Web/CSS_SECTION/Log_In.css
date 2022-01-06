@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+    background-color:rgb(36, 35, 35);
+}
+.Log_In_Container{
+    position: relative;
+    width: 50%;
+    height: 600px;
+    background-color: rgb(99, 97, 97);
+    top: 20px;
+    left: 25%;
+    border-radius: 10px;
+}
+.Log_In_Container .Log_In{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(99, 97, 97);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.Log_In_Container .Log_In .Title{
+    position: relative;
+    text-align: left;
+    padding: 1%;
+}
+.Log_In_Container .Log_In .Sign{
+    position: relative;
+    margin: 3% 0% 5% 0%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.Log_In_Container .Log_In .Email_Label, .Log_In_Container .Log_In .Password_label{
+    position: relative;
+    padding: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.Log_In_Container .Log_In .Password_label{
+    margin: 2% 0% 0% 0%;
+}
+.Log_In_Container .Log_In #E_Input, .Log_In_Container .Log_In #P_Input{
+    position: relative;
+    font-weight: bold;
+    width: 40%;
+    height: 5%;
+    border-radius: 10px;
+    background-color: cyan;
+}
+.Log_In_Container .Log_In .First_In{
+    position: relative;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: blue;
+    margin: 1% 1% 1% 1%;
+    width: 10%;
+    height: 5%;
+    color: white;
+}
+.Log_In_Container .Sign_Up{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    width: 30%;
+    height: 5%;
+    margin: 5% 0% 0% 0%;
+    background-color: blue;
+    border-radius: 80%;
+    cursor: pointer;
+}
+.Log_In_Container .Sign_Up .Reference{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.Log_In_Container .Pass, .Log_In_Container .Note{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    padding: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 2% 0% 2% 0%;
+}
+.Log_In_Container .Note{
+    top: 65%; 
+    left:35%;
+}

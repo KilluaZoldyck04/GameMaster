@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+    background-color:rgb(36, 35, 35); 
+}
+.Parent_Container{
+    position: absolute;
+    background-color: rgb(99, 97, 97);
+    top: 1%;
+    width: 8%;
+    height: 13%;
+    left: 87%;
+    border-radius: 10px;
+}
+.Parent_Container .Home_Container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.F_Left_Container{
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    background-color: rgb(99, 97, 97);
+    border-radius: 10px;
+    width: 41%;
+    height: 650px;
+}
+.F_Left_Container .Left_Container{
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    background-color:rgb(36, 35, 35); 
+    border-radius: 10px;
+    width: 94%;
+    height: 98%;
+}
+.F_Left_Container .Left_Container #Discount_1{
+    position: relative;
+    width: 98%;
+    left: 1%;
+    top: 1%;
+    height: 30%;
+    margin: 0% 0% 2% 0%;
+    border-radius: 10px;
+}
+.F_Left_Container .Left_Container .Information_1{
+    position: relative;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    text-align: justify;
+    font-weight: 600;
+    font-family: serif;
+    color:ghostwhite;
+    line-height: 20px;
+}
+.Main_Container{
+    position: absolute;
+    width: 50%;
+    height: 650px;
+    top: 15%;
+    right: 4%;
+    background-color:rgb(99, 97, 97);
+    border-radius: 10px;
+}
+.Main_Container .First_Step_Container, .Main_Container .Second_Content_Container, .Main_Container .Third_Content_Container{
+    position: relative;
+    width:90%;
+    height: 15%;
+    top: 10px;
+    left: 4%;
+    background-color: rgb(49, 48, 48);
+    border-radius: 10px;
+    margin:50px 10px 0px 10px;
+}
+.Main_Container .First_Step_Container .Circle_1, .Main_Container .Second_Content_Container .S_Circle_1, .Main_Container .Third_Content_Container .T_Circle_1{
+    position: absolute;
+    background-color:rgb(49, 48, 48);
+    width: 14%;
+    height: 70%;
+    border-radius: 50%;
+    top: -40%;
+    left: 2%;
+}
+.Main_Container .First_Step_Container .Circle_2{
+    position: absolute;
+    background-color:white;
+    width: 10%;
+    height: 50%;
+    border-radius: 50%;
+    top: -30%;
+    left: 4%;
+    font-size: 15px;
+}
+.Main_Container .First_Step_Container .Circle_2 .Paragraph_1,.Main_Container .Second_Content_Container .S_Circle_2 .Paragraph_1, .Main_Container .Third_Content_Container .T_Circle_2 .Paragraph_1{
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    font-weight: bold;
+}
+
+.Main_Container .First_Step_Container .Title_Content_1, .Main_Container .Second_Content_Container .Title_Content_2, .Main_Container .Third_Content_Container .Title_Content_3{
+    position: relative;
+    left:20%;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 1%;
+    color: white;
+}
+.Main_Container .First_Step_Container .Step_1{
+    position: relative;
+}
+.Main_Container .First_Step_Container .Step_1 #User_ID_1{
+    margin:0 30px 0 30px;
+    height: 30px;
+    width: 40%;
+    text-align: center;
+}
+.Main_Container .First_Step_Container .Step_1 #User_ID_2{
+    margin-right: 30px;
+    height: 30px;
+    width: 40%;
+    text-align: center;
+}
+.Main_Container .First_Step_Container .Step_1 .Note_1{
+    position: relative;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: sans-serif;
+    left: 1%;
+    width: 98%;
+    text-align: justify;
+    color: white;
+}
+.Main_Container .First_Step_Container .Title_Content_1 .Step_1{
+    position: absolute;
+    background-color: rgb(49, 48, 48);
+    width: 100%;
+    height: 100%;
+}
+.Main_Container .Second_Content_Container .S_Circle_2{
+    position: absolute;
+    background-color:white;
+    width: 10%;
+    height: 50%;
+    border-radius: 50%;
+    top: -30%;
+    left: 4%;
+}
+.Main_Container .Second_Content_Container #Amount{
+    position: relative;
+    top: 15%;
+    margin:0 25px 0 30px;
+    height: 30px;
+    width: 40%;
+}
+.Main_Container .Second_Content_Container .Equivalent{
+    position: absolute;
+    top: 50%;
+    left: 46.5%;
+}
+.Main_Container .Second_Content_Container #Equivalent_Item{
+    position: relative;
+    top: 15%;
+    margin-right: 30px;
+    height: 30px;
+    width: 40%;
+    background-color: antiquewhite;
+}
+.Main_Container .Third_Content_Container .T_Circle_2{
+    position: absolute;
+    background-color:white;
+    width: 10%;
+    height: 50%;
+    border-radius: 50%;
+    top: -30%;
+    left: 4%;
+}
+.Main_Container .Third_Content_Container #Payment_B1, .Main_Container .Third_Content_Container #Payment_B2,.Main_Container .Third_Content_Container #Payment_B3{
+    position: relative;
+    width: 25%;
+    height: 30%;
+    margin-left: 5%;
+    margin-right: 5px;
+    top: 10%;
+    background-color: rgb(104, 101, 101); 
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+.Parent_Container .Home_Container #Home{
+    position: relative;
+    left:1%;
+    right: 1%;
+    top: 4%;
+    height: 90%;
+    width: 98%;
+    cursor:pointer;
+    border-radius: 10px;
+}
+.Parent_Container .Home_Container #Home:hover{
+    position: relative;
+    opacity: 0.5;
+}
+
+.Main_Container .Currency_Container{
+    position: relative;
+    width: 40%;
+    left: 30%;
+    margin:10px 0px ;
+    top: 5%;
+}
+.Main_Container .Currency_Container .Default_Value{
+    position: relative;
+    padding: 10px;
+    background-color:rgb(71, 69, 69);
+    color: white;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+}
+.Main_Container .Currency_Container .Default_Value::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.Main_Container .Currency_Container .Content{
+    position: relative;
+    background-color: rgb(46, 45, 45);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border-radius: 10px;
+    list-style: none;
+}
+.Main_Container .Currency_Container .Content li:hover{
+    height:fit-content;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Main_Container .Currency_Container.active .Default_Value::before{
+    content:"-";
+    font-weight: bolder;
+}
+.Main_Container .Currency_Container.active .Content{
+    height:fit-content;
+    padding: 10px;
+}
+#Date{
+    position: relative;
+    padding: 1%;
+    top: 2%;
+    left: 15%;
+    color: black;
+    font-weight: bolder;
+    width: 70%;
+}

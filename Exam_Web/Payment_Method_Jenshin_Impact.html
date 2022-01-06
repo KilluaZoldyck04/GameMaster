@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenshin Impact</title>
+</head>
+<body>
+    <section class="Parent_Container">
+        <a href="Game_Master_Main_Page.html" class="Home_Container" ><input id="Home" src="Source_Of_Images/home.jpg" type="Image"> </a>
+    </section>
+    <section class="F_Left_Container">
+        <div class="Left_Container">
+            <img id="Discount_1" src="Source_Of_Images/JI_1.jpg">
+            <p class="Information_1">
+                Genshin Impact
+                <br>
+                Fortunately Game Master didn't limit the accessiblity of these promo.
+                BONUS ALERT:<br>First time purchase bonus:<br>Buy 300+30 Genesis Crystals, get 600 Genesis Crystals
+                <br>Buy 980+110 Genesis Crystals, get 1960 Genesis Crystals<br>Buy 1980+260 Genesis Crystals, get 3960 Genesis Crystals<br>Buy 3280+600 Genesis Crystals, get 6560 Genesis Crystals<br>Buy 6480+1600 Genesis Crystals, get 12960 Genesis Crystals<br><br>NOTE: If the UID was used to top up Genesis Crystals in-game or with other platforms previously, only the stated bonus (30/110/260/600 or 1600) would be given on Game Master.
+                Buy Genesis Crystals for Genshin Impact in seconds! Just enter your Genshin impact UID, select your server, choose the recharge amount, complete the payment and the Genesis Crystals will immediately reflect on your Genshin Impact account.
+                Pay with convenience using GCash, Bank Transfer, Over the Counter, and Card Payment. There's no credit card, registration, or log-in required!
+                <br>
+                Download & Play Genshin Impact today!
+
+            </p>
+        </div>
+    </section>
+    <form class="Main_Container" action="Transaction_History.php" method="post">
+        <input name="TITLE" value="G.I." hidden></input>
+        <div class="Currency_Container">
+            <div id="Default" class="Default_Value">Default Monetary</div>
+            <div class="Content">
+                <p><li id="Option_1" class="Monetary_1" onclick="option_1()">Philippine Peso (Php)</li>
+                    <br><li id="Option_2" class="Monetary_2" onclick="option_2()">US Dollar (USD)</li>
+                </p>
+            </div>
+        </div>
+        <section class="First_Step_Container">
+            <div class="Circle_1"></div>
+            <div class="Circle_2"><p class="Paragraph_1">Step 1</p></div>
+            <p class="Title_Content_1">Enter User ID</p>
+            <div class="Step_1">
+                <input id="User_ID_1" placeholder="User ID"></input>
+                <input id="User_ID_2" placeholder="Zone ID"></input>
+                <p class="Note_1">To find your User ID, click on your avatar in the top left corner of the main game screen. Then go to the "Basic Info" tab. Your user ID is shown below your nickname. Please input the complete user ID here, e.g. 12345678(1234).</p>
+            </div>
+        </section>
+        <section class="Second_Content_Container">
+            <div class="S_Circle_1"></div>
+            <div class="S_Circle_2"><p class="Paragraph_1">Step 2</p></div>
+            <p class="Title_Content_2">E-Payment</p>
+            <input type="text" id="Amount" placeholder="Enter Amount" oninput="" name="PHP_Currency"></input>
+            <p class="Equivalent">=</p>
+            <input id="Equivalent_Item" placeholder="Genesis Crystal" name="Item_E"></input>
+        </section>
+        <section class="Third_Content_Container">
+            <div class="T_Circle_1"></div>
+            <div class="T_Circle_2"><p class="Paragraph_1">Step 3</p></div>
+            <p class="Title_Content_3">Payment Account</p>
+            <button id="Payment_B1">Paypal</button>
+            <button id="Payment_B2" onclick="Result()">Purchase</button>
+            <button id="Payment_B3">Cryptocurrency</button>
+        </section>
+        <input id="Date" name ="Current_Date" disabled></input>
+    </form>   
+</body>
+<link rel="stylesheet" href="CSS_SECTION/Payment_Method_JS_1.css">
+<script src="J_SCRIPT_SECTION/Payment_Method_JS_1.js"></script>
+</html>

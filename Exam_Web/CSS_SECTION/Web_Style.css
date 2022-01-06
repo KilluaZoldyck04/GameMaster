@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width:100%;
+    background-color:rgb(36, 35, 35); 
+}
+.Label_Container{
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    top: 75% ;
+    left: 5%;
+    background-color:rgb(99, 97, 97);
+    color: black;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Popular_Game_Container{
+    position: absolute;
+    background-color: aliceblue;
+    top: 75%;
+    left: 5%;
+    border-color: black;
+    width: 90%;
+    height: 35%;
+}
+
+ul{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 8%;
+    height: 10%;
+    list-style: none;
+    background-color: white;
+}
+ul li a input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ul li a input:hover{
+    opacity:0.8;
+}
+ul li div{
+    position: absolute;
+    top: 100%;
+    width:300%;
+    height:fit-content;
+    list-style: none;
+}
+ul li div ul{
+    position: absolute;
+    width: 100%;
+    display: none;
+}  
+ul li:hover div ul{
+    display: block;
+}  
+ul li div ul li{
+    list-style: none;
+    position: relative;
+    padding: 5%;
+    background-color:white;
+}
+ul li div ul li a{
+    text-decoration: none;   
+    padding: 5%;
+    font-weight: bold;
+    color: black;
+}
+ul li div ul li a:hover{
+    font-weight: bold;
+    color: white;
+    display: block;
+    background-color: rgb(49, 56, 49);
+    top: 50%;
+}
+.Sub_Menu{
+    position: absolute;
+    background-color: white;
+    left: -15%;
+}
+.Search_Bar {
+    position: absolute;
+    background-color: rgb(99, 97, 97);
+    width: 90%;
+    height: 21%;
+    top: 15%;
+    left: 5%;
+    padding: 0%;
+}
+#Logo{
+    position: absolute;
+    width: 20%;
+    height: 14.4%;
+    left: 12.5%;
+    top: 0%;
+    padding: 1%;
+}
+#Search{
+    position: absolute;
+    top: 20%;
+    left: 82%;
+    width: 5%;
+    height: 10%;
+}
+#MOBA, #COD, #LOL, #JI, #Valorant{
+    position: absolute;
+    top: 82%;
+    width: 15%;
+    height: 23%;
+    border-radius: 20%;
+}
+
+#MOBA{
+left: 6%;
+}
+#COD{
+left: 24%;
+}
+#LOL{
+left: 42.5%;
+}
+#JI{
+    right: 24%;
+}
+#Valorant{
+    right: 6%;
+}
+#MOBA:hover, #COD:hover, #LOL:hover, #JI:hover, #Valorant:hover{
+    top: 80%;
+}
+.Update_Container{
+    position: absolute;
+    width: 20%;
+    height: 3%;
+    padding: 0%;
+    top: 115%;
+    background-color:transparent;
+    color: white;
+    left: 40%;
+    font-weight: bold;
+}
+#Facebook_P, #Instagram_P{
+    position: absolute;
+    top: 118%;
+    width: 7%;
+    height: 12%;
+    border-radius: 50%;
+    padding: 1%;
+}
+#Facebook_P{
+    left: 43%;
+}
+#Facebook_P:hover{
+    opacity:1;
+    top: 116%;
+}
+#Instagram_P{
+    right: 43%; 
+}
+#Instagram_P:hover{
+    opacity: 1;
+    top: 116%;
+}
+#Search_Box{
+    position: absolute;
+    width: 71%;
+    height: 5%;
+    top: 22.5%;
+    left: 10%;
+    padding: 0%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.MOBA_String, .COD_String, .LOL_String, .JI_String, .Valorant_String{
+    position: absolute;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 105%;
+    
+}
+.MOBA_String{
+    left: 10%;
+}
+.COD_String{
+    left: 26%;
+}
+.LOL_String{
+    left: 43%;
+}
+.JI_String{
+    left: 64.5%;
+}
+.Valorant_String{
+    left: 84.5%;
+}
+.MOBA_String a, .COD_String a, .LOL_String a, .JI_String a, .Valorant_String a{
+    text-decoration: none;
+    color: blue;
+}
+#On_Promo_Items{
+    position: absolute;
+    width: 70%;
+    height: 35%;
+    padding: 0%;
+    top: 38%;
+    left: 15%;
+    object-fit: initial;
+}
+#On_Promo_Items:hover{
+    position: relative;
+    top: 37%;
+    left: 13% ;
+    width: 74%;
+    height: 37%;
+    opacity: 0.5;
+}
+.Back_Container{
+    position: absolute;
+    background-color: white;
+    border-radius: 70%;
+    height: 100px;
+    width: 100px;
+    top: 48%;
+    left: 5%;
+    cursor: pointer;
+}
+.Back_Container:hover{
+    top: 48%;
+    left: 4%;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+.Arrow_back{
+    position: relative;
+    font-weight: bolder;
+    font-size: 96px;
+    text-align:center;
+    top: -5%;
+    left: 0%;
+}
+.Next_Container{
+    position: absolute;
+    background-color: white;
+    border-radius: 70%;
+    height: 100px;
+    width: 100px;
+    top: 48%;
+    right: 5%;
+    cursor: pointer;
+}
+.Next_Container:hover{
+    top: 48%;
+    right: 4%;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+.Arrow_next{
+    position: relative;
+    font-weight: bolder;
+    font-size: 96px;
+    text-align:center;
+    top: -5%;
+    left: 0%;
+}
+

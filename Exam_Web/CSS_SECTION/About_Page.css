@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width:100vw;
+    background-color:rgb(99, 97, 97);
+}
+.Container{
+    position: relative;
+    background-color: rgb(36, 35, 35); 
+    height: 150px;
+    top: 10px;
+    width: 90%;
+    left: 5%;
+}
+.Container #Logo_1{
+    position: relative;
+    top: 3%;
+    width: 98%;
+    height: 94%;
+    left: 1%;
+}
+.Info_1{
+    position: absolute;
+    background-color: rgb(36, 35, 35); 
+    top: 27%;
+    left: 7%;
+    width: 86%;
+    height: 73%;
+    padding: 1%;
+}
+.Container_1{
+    position: absolute;
+    background-color: rgb(36, 35, 35); 
+    height: 98%;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+}
+section div p{
+    position: relative;
+    color: white;
+    text-align: justify;
+    width: 94%;
+    left: 3%;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+}

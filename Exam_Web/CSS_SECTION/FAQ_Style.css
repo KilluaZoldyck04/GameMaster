@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+    background-color: rgb(36, 35, 35); 
+}
+.FAQ{
+    position: relative;
+    top: 0%;
+    width: 96%;
+    left: 2%;
+    height: 30%;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(99, 97, 97);
+    text-align: center;
+    color:rgb(36, 35, 35); 
+}
+.BackGround_Container{
+    position: relative;
+    background-color: gray;
+    left: 10%;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    margin: 1% 1% 1% 1%;
+}
+.Items_Container{
+    max-width: 100%;
+}
+.Items_Container_2{
+    max-width: 100%;
+}
+.Items_Container .Content_1{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    padding: 1%;
+    margin:20px 0px 0px 0px ;
+}
+.Items_Container_2 .Content_2{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    padding: 1%;
+    margin: 20px 0px 0px 0px;
+}
+.Items_Container .Content_1 .Question, .Items_Container_2 .Content_2 .Question{
+    position: relative;
+    padding: 10px;
+    background-color:rgb(36, 35, 35); 
+    color: white;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+}
+.Items_Container .Content_1 .Question:hover, .Items_Container_2 .Content_2 .Question:hover{
+    background-color: rgb(36, 35, 35); 
+    color: white;
+    width: 96%;
+    left: 2%;
+}
+.Items_Container .Content_1 .Question::before, .Items_Container_2 .Content_2 .Question::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.Items_Container .Content_1.active .Question::before, .Items_Container_2 .Content_2.active .Question::before{
+    content:"-";
+    font-weight: bolder;
+}
+
+.Items_Container .Content_1 .Content, .Items_Container_2 .Content_2 .Content{
+    position: relative;
+    background-color: rgb(99, 97, 97);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 96%;
+    left: 2%;
+    border-radius: 10px;
+}
+
+.Items_Container .Content_1.active .Content, .Items_Container_2 .Content_2.active .Content{
+    height:fit-content;
+    padding: 10px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBA</title>
+</head>
+<body>
+        <section class="Parent_Container">
+            <a href="Game_Master_Main_Page.html" class="Home_Container"><input id="Home" src="Source_Of_Images/home.jpg" type="Image"> </a>
+        </section>
+        <section class="F_Left_Container">
+            <div class="Left_Container">
+                <img id="Discount_1" src="Source_Of_Images/Mobile_Legend_D.jpg">
+                <p class="Information_1">
+                    <br>As of Dec. 12 2021, Game Master enable user experience to access unexpected promo by coordinating to MOBA E.Group. To live in users expectation Game Master made the other promo affordable and available for players worldwide, By Filling out the form displayed in payment method means that you agree on the provided terms and conditions.
+                    <br><br>Purchasable through G-Cash by directing to the nearest G-store, Cryptocurrencies through online transactions, and cash via G.M.Card purchasable in any store with verified partnership to Game Master Inc.
+                    <br><br><br>Note: By purchasing the item/s, The items will be transfered to your account right after the transaction, Thus in case of troubles you may approach us via email presented in FAQ's.
+                    <br><br>Download & play Mobile Legends: Bang Bang today!
+    
+                </p>
+            </div>
+        </section>
+        <form class="Main_Container" action="Transaction_History.php" method="post">
+            <input name="TITLE" value="MOBA" hidden></input>
+            <div class="Currency_Container">
+                <div id="Default" class="Default_Value">Default Monetary</div>
+                <div class="Content">
+                    <p><li id="Option_1" class="Monetary_1" onclick="option_1()">Philippine Peso (Php)</li>
+                        <br><li id="Option_2" class="Monetary_2" onclick="option_2()">US Dollar (USD)</li>
+                    </p>
+                </div>
+            </div>
+            <section class="First_Step_Container">
+                <div class="Circle_1"></div>
+                <div class="Circle_2"><p class="Paragraph_1">Step 1</p></div>
+                <p class="Title_Content_1">Enter User ID</p>
+                <div class="Step_1">
+                    <input id="User_ID_1" placeholder="User ID"></input>
+                    <input id="User_ID_2" placeholder="Zone ID"></input>
+                    <p class="Note_1">To find your User ID, click on your avatar in the top left corner of the main game screen. Then go to the "Basic Info" tab. Your user ID is shown below your nickname. Please input the complete user ID here, e.g. 12345678(1234).</p>
+                </div>
+            </section>
+            <section class="Second_Content_Container">
+                <div class="S_Circle_1"></div>
+                <div class="S_Circle_2"><p class="Paragraph_1">Step 2</p></div>
+                <p class="Title_Content_2">E-Payment</p>
+                <input type="text" id="Amount" placeholder="Enter Amount" oninput="" name="PHP_Currency"></input>
+                <p class="Equivalent">=</p>
+                <input id="Equivalent_Item" placeholder="Diamond" name="Item_E"></input>
+            </section>
+            <section class="Third_Content_Container">
+                <div class="T_Circle_1"></div>
+                <div class="T_Circle_2"><p class="Paragraph_1">Step 3</p></div>
+                <p class="Title_Content_3">Payment Account</p>
+                <button id="Payment_B1">Paypal</button>
+                <button type="submit" id="Payment_B2" onclick="Result()">Purchase</button>
+                <button id="Payment_B3">Cryptocurrency</button>
+            </section>
+            <input id="Date" name ="Current_Date" disabled></input>
+        </form>    
+</body>
+<link rel="stylesheet" href="CSS_SECTION/Payment_Method.css">
+<script src="J_SCRIPT_SECTION/Payment_Method.js"></script>
+</html>

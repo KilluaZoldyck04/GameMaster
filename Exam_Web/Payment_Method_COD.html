@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COD</title>
+</head>
+<body>
+    <section class="Parent_Container">
+        <a href="Game_Master_Main_Page.html" class="Home_Container"><input id="Home" src="Source_Of_Images/home.jpg" type="Image"> </a>
+    </section>
+    <section class="F_Left_Container">
+        <div class="Left_Container">
+            <img id="Discount_1" src="Source_Of_Images/Garena.jpg">
+            <p class="Information_1">
+                Call of Duty Mobile - Shells Voucher
+
+                <br><br>Get free crate/s and stand a chance to win lifetime internet access or 1000 Garena Shells when you pay using Globe. For more information on the Smart/ TNT promo, please click here <br><br>REMINDER: You can convert your Garena Shells voucher to Call of Duty Mobile CP here. Make sure to login using your in-game account.
+
+                <br><br>Buy Garena Shells for Call of Duty Mobile CP in seconds! Just select the recharge amount, complete the payment and the Garena Shells voucher will immediately appear on the confirmation page and will be sent via email or SMS/Text Message (if purchased using Smart/Sun/TnT or Globe/TM). Purchasable via G-Cash, Cryptocurrencies and cash by following the steps on the right side.
+
+                <br><br>Download & Play Call of Duty Mobile today!
+
+            </p>
+        </div>
+    </section>
+        <form class="Main_Container" action="Transaction_History.php" method="post">
+            <input name="TITLE" value="Call of Duty" hidden></input>
+            <div class="Currency_Container">
+                <div id="Default" class="Default_Value">Default Monetary</div>
+                <div class="Content">
+                    <p><li id="Option_1" class="Monetary_1" onclick="option_1()">Philippine Peso (Php)</li>
+                        <br><li id="Option_2" class="Monetary_2" onclick="option_2()">US Dollar (USD)</li>
+                    </p>
+                </div>
+            </div>
+            <section class="First_Step_Container">
+                <div class="Circle_1"></div>
+                <div class="Circle_2"><p class="Paragraph_1">Step 1</p></div>
+                <p class="Title_Content_1">Enter User ID</p>
+                <div class="Step_1">
+                    <input id="User_ID_1" placeholder="User ID"></input>
+                    <input id="User_ID_2" placeholder="Zone ID"></input>
+                    <p class="Note_1">To find your User ID, click on your avatar in the top left corner of the main game screen. Then go to the "Basic <br> Info" tab. Your user ID is shown below your nickname. Please input the complete user ID here, e.g. 12345678(1234).</p>
+                </div>
+            </section>
+            <section class="Second_Content_Container">
+                <div class="S_Circle_1"></div>
+                <div class="S_Circle_2"><p class="Paragraph_1">Step 2</p></div>
+                <p class="Title_Content_2">E-Payment</p>
+                <input type="text" id="Amount" placeholder="Enter Amount" oninput="" name="PHP_Currency"></input>
+                <p class="Equivalent">=</p>
+                <input id="Equivalent_Item" placeholder="Shell" name="Item_E"></input>
+            </section>
+            <section class="Third_Content_Container">
+                <div class="T_Circle_1"></div>
+                <div class="T_Circle_2"><p class="Paragraph_1">Step 3</p></div>
+                <p class="Title_Content_3">Payment Account</p>
+                <button id="Payment_B1">Paypal</button>
+                <button type ="submit" id="Payment_B2" onclick="Result()">Purchase</button>
+                <button id="Payment_B3">Cryptocurrency</button>
+            </section>
+            <input id="Date" name="Current_Date" disabled></input>
+        </form>   
+</body>
+<link rel="stylesheet" href="CSS_SECTION/Payment_Method_COD.css">
+<script src="J_SCRIPT_SECTION/Payment_Method_COD.js"></script>
+</html>
